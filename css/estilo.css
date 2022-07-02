@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+body {
+    font-family:"Nunito" ,Arial, Helvetica, sans-serif;
+    background:#808080;
+}
+
+/****************************************************************************************************************
+    TOPO
+****************************************************************************************************************/
+
+.topo {
+    background: #4F4F4F;
+    box-shadow: inset 0 0 4px 4px #555555;
+    position: relative;
+}
+
+.menu-icone-principal {
+    color: white;
+    font-size: 1.5em;
+}
+
+.menu {
+    font-family: 'Courier New', Courier, monospace ,Arial, Helvetica, sans-serif ;
+    display: flex;
+    padding: 15px;
+    align-items: center;
+}
+
+.menu-item {
+    margin-right: 30px;
+}
+
+.menu-item-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#nav-btn {
+    cursor: pointer;
+}
+
+#nav-slide {
+    position: fixed;
+    left: -270px;
+    width: 250px;
+    color: rgb(0, 0, 0);
+    background: #D3D3D3;
+    padding: 10px;
+    transition: left 0.4s linear;
+    z-index: 10;
+}
+
+.slide-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/****************************************************************************************************************
+    MODAL-ADICIONAR
+****************************************************************************************************************/
+
+#modal-adicionar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+    display: none;
+}
+
+#backdrop-adicionar {
+    background: rgba(73, 73, 73, 0.7);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backdrop-filter: blur(4px);
+}
+
+#modal-content-adicionar {
+    background-color: #383838;
+    box-shadow: 10px 10px 10px 5px #2e2e2e;
+    border-radius: 5px;
+    z-index: 5; 
+    color: white;
+    padding: 20px;
+}
+
+.titulo-modal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.titulo-modal-principal {
+    font-family: 'Courier New', Courier, monospace ,Arial, Helvetica, sans-serif ;
+    font-size: 1.3em;
+    margin-right: 90px;
+}
+
+.incone-fechar {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-titulo-postagem {
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+    color: white;
+    background: #383838;
+}
+
+.modal-conteudo-postagem {
+    margin-top: 10px;
+    width: 100%;
+    height: 140px;
+    color: white;
+    background: #383838;
+}
+
+.modal-cores-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.area-cor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cor-1 {
+    background: rgb(200, 236, 101);
+}
+
+.cor-2 {
+    background: rgb(105, 235, 217);
+}
+
+.cor-3 {
+    background: rgb(219, 137, 199);
+}
+
+.icone-ok {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marcador-ok {
+    border: 1px solid white;
+}
+
+.modal-content-adicionar input
+{
+  outline: 0;
+  border: none;
+}
+
+.modal-content-adicionar textarea
+{
+  outline: 0;
+  border: none;
+}
+
+/****************************************************************************************************************
+    PRINCIPAL
+****************************************************************************************************************/
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 1;
+}
+
+.principal-item {
+    margin: 5px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    word-wrap: break-word;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 0px black;
+}
+
+.principal-titulo {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.principal-conteudo {
+    padding: 10px;
+}
